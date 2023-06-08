@@ -1,5 +1,5 @@
 // Given a txt file (Kodiak_data.txt) and number_string write a code that will output alphabetically ordered possible and valid words.
-// The Kodiak_data.txt file has a list of all possible and valid words needed
+// The Kodiak_data.txt file has a list of all possible and valid words needed.
 
 
 #include <algorithm>
