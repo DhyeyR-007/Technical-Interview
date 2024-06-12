@@ -1,3 +1,12 @@
+# In this problem you will write a program to "encrypt" and "decrypt" strings of text using a "password".
+# The cryptogram will be based on letter rotation, with the password indicating how far each letter of the plain text should be rotated. The letter 'a' rotates by 0, 'b' by 1, 'c' by 2, and so forth. For example, 'z' rotated by 'b' (1) would become 'a' again, since in rotation, 'z' is followed by 'a' again.
+# For example, if the password is "abc" and the plain text is "aaaaaa", then the encrypted text is "abcabc", with each letter of the password effecting one letter of plain text. The password is just repeated as long as necessary to encrypt all the text.
+# Only letters should be encrypted, and they should maintain their case. So password "abc" would encrypt 'Hello World!' as 'Hfnlp Yosnd!'.
+# Passwords are not case-sensitive, and characters in the password that are not letters are ignored/skipped/as if they were not there. A blank password leaves the plain text unchanged.
+# Write two functions: encrypt and decrypt. Each function will take an input string and a password string, and will return the encrypted or decrypted string output.
+
+
+
 def process_text(text, password, encrypt=True):
   
    filtered_password = [rot for rot in password.lower() if rot.isalpha()] # To ensure only alphabetical characters are there in password
